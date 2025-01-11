@@ -1,0 +1,66 @@
+.projects__container {
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+.project__title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+
+.project-grid-container {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem; /* Space between columns */
+  justify-content: space-between;
+  align-items: flex-start; /* Align columns at the top */
+  margin-left: 4%;
+  margin-right: 2%;
+}
+
+.project-group {
+  flex: 1; /* Allow equal spacing for each column */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--neutral-light);
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.group-title {
+  font-size: 1.5rem;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%; /* Ensure it aligns with the group */
+  border-bottom: 1px solid var(--primary-light); /* Optional: underline title */
+  padding-bottom: 0.5rem; /* Space between title and content */
+}
+
+/* Align projects vertically within columns */
+.project-column {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%; /* Ensure alignment with title */
+  align-items: center; /* Center-align the project boxes */
+}
+
+/* Styling for the "Other Projects" list inside the last column */
+.other-projects-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem; /* Add spacing between "Video Editing" and "Other Projects" */
+  text-align: center; /* Center-align the list */
+}
+
+.other-project-item {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: var(--neutral-dark);
+}

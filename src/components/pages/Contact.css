@@ -1,0 +1,116 @@
+.contact__container {
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; /* Allows proper alignment */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contact__container.animate {
+  opacity: 1;
+  transform: translateY(0); /* End position */
+}
+
+.contact__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.contact__title {
+  font-size: 2.5rem;
+  color: var(--primary-dark);
+  margin-bottom: 2rem;
+}
+
+/* Contact Form */
+.contact__form {
+  flex: 1;
+  min-width: 500px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--neutral-dark);
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--neutral-dark);
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.contact__form textarea {
+  resize: none; /* Prevent resizing */
+}
+
+.contact__submit-btn {
+  padding: 0.75rem;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact__submit-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Contact Info */
+.contact__info {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.contact__info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--neutral-dark);
+}
+
+.contact__icon {
+  font-size: 3rem;
+  color: var(--primary);
+  transition: color 0.3s ease;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.contact__info a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.contact__info a:hover {
+  color: var(--primary);
+}

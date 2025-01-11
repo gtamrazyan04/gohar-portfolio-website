@@ -15,7 +15,7 @@ const Navigation = () => {
 
       {/* Navigation Links */}
       <ul className="navigation_right">
-        {["home", "about", "work", "skills", "testimonials", "contact"].map(
+        {["home", "about", "projects", "skills", "testimonials", "contact"].map(
           (item) => (
             <li key={item} className="navigation_link-item">
               <a href={`#${item}`} className="navigation_link">

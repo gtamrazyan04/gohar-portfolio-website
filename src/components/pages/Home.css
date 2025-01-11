@@ -1,0 +1,143 @@
+.home__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Intro Section */
+.home__intro {
+  flex: 1;
+  padding: 5rem;
+  position: relative;
+}
+
+.intro__box {
+  background-color: rgba(255, 255, 255, 0.8); /* Translucent background */
+  border-radius: 12px;
+  padding: 2rem;
+  padding-right: 3rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: max-content;
+}
+
+.wave-emoji {
+  font-size: 3rem;
+}
+
+.intro__text {
+  text-align: left;
+}
+
+.text-small {
+  font-size: 1.2rem;
+  color: var(--neutral-dark);
+  text-align: left;
+}
+
+.text-large {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-top: 0.5rem;
+}
+
+/* Dynamic Points */
+.intro__points {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.point {
+  font-size: 1rem;
+  color: var(--neutral-dark);
+  position: absolute;
+}
+
+.point-1 {
+  top: 0;
+  left: 100px;
+}
+
+.point-2 {
+  top: 30px;
+  left: 130px;
+}
+
+.point-3 {
+  top: 60px;
+  left: 160px;
+}
+
+.point-4 {
+  top: 90px;
+  left: 190px;
+}
+
+.point-5 {
+  top: 120px;
+  left: 220px;
+}
+
+/* Profile Image Section */
+.home__image-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+  position: relative;
+}
+
+.profile-image {
+  width: auto;
+  height: auto;
+  max-height: 80%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* Background Circles */
+.home__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.home__background-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
+  background: linear-gradient(135deg, var(--white), var(--primary-light));
+}
+
+.home__circle--small {
+  width: 100px;
+  height: 100px;
+  top: 10%;
+  left: 10%;
+}
+
+.home__circle--medium {
+  width: 200px;
+  height: 200px;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.home__circle--large {
+  width: 400px;
+  height: 400px;
+  bottom: 20%;
+  right: 10%;
+}

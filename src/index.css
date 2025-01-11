@@ -1,16 +1,21 @@
 :root {
-  /* Blue shades */
-  --primary-blue: #0056d6;
-  --light-blue: #85c1e9;
-  --dark-blue: #003c8f;
-  --accent-blue: #0099ff;
-  --very-light-blue: #eaf4fe;
+  /* Primary Colors (Blue) */
+  --primary-light: #afc1ad; /* Light Green */
+  --primary: #5b6e5b; /* Base Green */
+  --primary-dark: #394639; /* Dark Green */
 
-  /* Gray shades */
-  --dark-gray: #3d3d3d;
-  --medium-gray: #6e6e6e;
-  --light-gray: #d3d3d3;
-  --very-light-gray: #f5f5f5;
+  /* Secondary Colors (Green) */
+  --secondary-light: #dbeafe; /* Light Blue */
+  --secondary: #3b82f6; /* Base Blue */
+  --secondary-dark: #1e3a8a; /* Dark Blue */
+
+  /* Neutral Colors */
+  --neutral-light: #f3f4f6; /* Light Gray */
+  --neutral: #9ca3af; /* Medium Gray */
+  --neutral-dark: #374151; /* Dark Gray */
+
+  /* Accent Colors */
+  --accent: #f43f5e; /* Coral Red */
 
   /* White and Black */
   --white: #ffffff;
