@@ -39,7 +39,7 @@ const timelineData = [
     logo: require("../../assets/eth-logo.png"),
   },
   {
-    title: "Web App Design Volunteer at voCHabular",
+    title: "WebApp Design Volunteer at voCHabular",
     date: "Feb 2023 – Present",
     description:
       "Volunteered to create a WebApp where exercises from the voCHabular books are digitized for German learners.",
@@ -56,11 +56,57 @@ const timelineData = [
     logo: require("../../assets/aksa-logo.png"),
   },
 ];
-
 const About = () => {
   return (
     <section id="about" className="about__container">
-      <h2 className="about__title">About My Education and Career</h2>
+      {/* About Me Section */}
+      <h2 className="about__title">About Me</h2>
+      <div className="about__intro">
+        <p>
+          I'm currently a student in the final year of my{" "}
+          <span className="highlight">Computer Science Bachelor's studies</span>{" "}
+          at ETH Zurich, as well as a part-time{" "}
+          <span className="highlight">
+            high school Computer Science teacher
+          </span>{" "}
+          at Alte Kantonsschule Aarau. I have a strong passion for{" "}
+          <span className="highlight-special">coding</span>, designing intuitive
+          applications, and helping others discover and learn technology.
+          Outside of work and studies, I enjoy playing{" "}
+          <span className="highlight">chess</span> , which I used to compete in
+          at a high level{" "}
+          <a href="#chess" className="inline-link">
+            (explore my chess achievements)
+          </a>
+          . I also love exploring new{" "}
+          <a href="#skills" className="inline-link">
+            skills
+          </a>
+          , collaborating on impactful projects, and learning new{" "}
+          <a href="#languages" className="inline-link">
+            languages
+          </a>
+          . One of my key strengths is the ability to learn new skills, such as
+          programming languages or technical concepts, quickly and
+          independently. For instance, with no prior experience, I taught myself
+          React Native and developed a mobile app within just three weeks{" "}
+          <a
+            href="direct link to my react native github"
+            className="inline-link"
+          >
+            check it out
+          </a>
+          . To enhance my efficiency and learn by doing, I frequently
+          collaborate with ChatGPT, elevating my skills in creating effective
+          prompts to get exactly what I need. With my broad knowledge, curiosity
+          and engagement, I'm able to contribute to a wide range of projects and
+          tasks, even in areas that are new to me. I'm constantly seeking
+          opportunities to grow and learn through exciting new projects.
+        </p>
+      </div>
+
+      {/* Education and Career Section */}
+      <h2 className="about__title">Education and Career</h2>
       <div className="about__timeline">
         <svg
           className="timeline__spiral"

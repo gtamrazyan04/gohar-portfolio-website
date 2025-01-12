@@ -4,6 +4,37 @@
   position: relative;
   z-index: 1;
 }
+.about__intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--neutral-dark);
+  line-height: 1.8;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 3rem !important;
+}
+
+.highlight {
+  font-weight: bold;
+  color: var(--primary-dark);
+}
+
+.highlight-special {
+  font-family: "Fira Code", monospace;
+  letter-spacing: 0.03em;
+}
+.inline-link {
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px dotted var(--primary-dark);
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.inline-link:hover {
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
 
 .about__title {
   text-align: center;

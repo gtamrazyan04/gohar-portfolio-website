@@ -91,7 +91,7 @@ const Contact = () => {
           <div className="contact__info-item">
             <FaLinkedin className="contact__icon" />
             <a
-              href="https://www.linkedin.com/in/gohar-tamrazyan"
+              href="https://www.linkedin.com/in/gohar-tamrazyan-401860293/"
               target="_blank"
               rel="noopener noreferrer"
             >

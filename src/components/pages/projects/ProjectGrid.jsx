@@ -7,7 +7,7 @@ const projectGroups = [
     title: "Websites Built in WIX",
     projects: [
       {
-        title: "Intro to Programming Website",
+        title: "Intro to Programming",
         description:
           "Created my own website for my students when working as a teaching assistant.",
         mediaType: "image",
@@ -19,7 +19,7 @@ const projectGroups = [
         link: "https://eprog23.wixstudio.com/hs23",
       },
       {
-        title: "voCHabular Web-App",
+        title: "voCHabular WebApp",
         description:
           "Language learning platform built voluntarily for voCHabular in WIX Studio.",
         mediaType: "image",
@@ -33,10 +33,10 @@ const projectGroups = [
     ],
   },
   {
-    title: "React and React Native Projects",
+    title: "React (Native) Projects",
     projects: [
       {
-        title: "React Native Task Management App",
+        title: "React Native App",
         description:
           "(HCI project) Task management app with multiple versions, built based on needfinding, ideation etc.",
         mediaType: "video",
@@ -44,7 +44,7 @@ const projectGroups = [
         link: "https://github.com/gtamrazyan04/hci-react-native-task-app",
       },
       {
-        title: "Conflict Events Map Website",
+        title: "Conflict Events Map",
         description:
           "Built with React and Express.js using ACLED data as a group project.",
         mediaType: "image",

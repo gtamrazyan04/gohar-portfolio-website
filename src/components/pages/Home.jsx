@@ -29,9 +29,9 @@ const Home = () => {
         <div className="intro__points">
           <p className="point point-1">CS Student @ETHZ</p>
           <p className="point point-2">CS Teacher @AlteKanti Aarau</p>
-          <p className="point point-3">Design Enthusiast</p>
+          <p className="point point-3">Former Chess Player</p>
           <p className="point point-4">Passionate Teacher</p>
-          <p className="point point-5">Chess Player</p>
+          <p className="point point-5">Design Enthusiast</p>
         </div>
       </motion.div>
 

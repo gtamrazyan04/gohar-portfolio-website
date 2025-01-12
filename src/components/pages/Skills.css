@@ -1,93 +1,190 @@
-.skills-interests-container {
-  padding: 4rem 2rem;
+/* General Section Styling */
+.skills-section {
+  padding: 4rem 0rem;
   background-color: var(--neutral-light);
   text-align: center;
-  overflow: hidden; /* Prevents overflow during animations */
-  opacity: 0; /* Hidden by default */
-  transform: translateY(50px); /* Start position */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
 }
 
-.skills-interests-container.animate {
-  opacity: 1;
-  transform: translateY(0); /* End position */
+.chess-section {
+  background-color: var(-white);
+  padding: 4rem 0rem;
+  text-align: center;
 }
 
 .section-title {
   font-size: 2.5rem;
-  color: var(--primary-dark);
+  color: #333;
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.skills-category {
+  width: 85%;
+  margin: 0 auto;
+  scroll-margin-top: 100px;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Subcategory Title */
+.skills-subcategory {
   margin-bottom: 2rem;
 }
 
-.cards-grid {
+.subcategory-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #666;
+}
+
+/* Skills Grid */
+.skills-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
+  gap: 2.5rem;
+  z-index: 1;
+  position: relative;
 }
 
-.skill-card {
-  background-color: var(--white);
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  padding: 1.5rem;
-  text-align: left;
-  opacity: 0; /* Hidden by default */
-  transform: translateY(20px); /* Start position */
-  animation: fadeIn 0.6s ease-out forwards; /* Animation applied on entry */
-  animation-delay: var(--card-delay); /* Different delay for each card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-card:hover {
-  transform: translateY(-10px) scale(1.05); /* Slightly enlarge and lift */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.card-header {
+/* Individual Skill Item */
+.skill-item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff, #eaeaea);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon inside Skill Item */
+.skill-icon,
+.skill-flag {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 5px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Year Display Inside the Circle */
+.year-display {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Tooltip Styling */
+.tooltip {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.skill-item:hover .tooltip {
+  opacity: 1;
+}
+
+/* Chess Achievements Section */
+.chess-achievements {
+  margin-top: 2rem;
+}
+
+.chess-achievements .category-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #444;
+  text-transform: uppercase;
+}
+
+/* Legend Section */
+.skills-legend {
+  margin-left: 10rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.skills-legend h4 {
+  font-size: 1.2rem;
   margin-bottom: 1rem;
+  color: #333;
 }
 
-.card-header h3 {
-  font-size: 1.5rem;
-  color: var(--primary-dark);
-}
-
-.card-header svg {
-  font-size: 2rem;
-  color: var(--primary-light);
-}
-
-.card-content {
+.skills-legend ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-.card-content li {
-  font-size: 1rem;
-  color: var(--neutral-dark);
+.skills-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.card-content li::before {
-  content: "• ";
-  color: var(--primary);
-  font-weight: bold;
+.legend-icon {
+  width: 20px;
+  height: 20px;
 }
 
-/* Fade-in animation for cards */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-grid {
+    gap: 1rem;
+    z-index: 1;
+    position: relative;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .skill-item {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skill-icon,
+  .skill-flag {
+    width: 40%;
+    height: 40%;
+  }
+
+  .year-display {
+    font-size: 0.7rem;
   }
 }
