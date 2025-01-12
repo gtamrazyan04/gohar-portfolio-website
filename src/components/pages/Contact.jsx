@@ -85,16 +85,18 @@ const Contact = () => {
         {/* Contact Info */}
         <div className="contact__info">
           <div className="contact__info-item">
-            <FaEnvelope className="contact__icon" />
-            <a href="mailto:gtamrazyan@ethz.ch">gtamrazyan@ethz.ch</a>
+            <a href="mailto:gtamrazyan@ethz.ch">
+              <FaEnvelope className="contact__icon" />
+              gtamrazyan@ethz.ch
+            </a>
           </div>
           <div className="contact__info-item">
-            <FaLinkedin className="contact__icon" />
             <a
               href="https://www.linkedin.com/in/gohar-tamrazyan-401860293/"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <FaLinkedin className="contact__icon" />
               LinkedIn
             </a>
           </div>

@@ -28,7 +28,7 @@
 .skills-category {
   width: 85%;
   margin: 0 auto;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 50px;
 }
 
 .category-title {
@@ -43,6 +43,14 @@
   margin-bottom: 2rem;
 }
 
+.skills-category .skills-subcategory:last-child {
+  margin-bottom: 0;
+}
+
+#languages {
+  border-top: 1px dashed var(--neutral); /* Adds a solid black border at the top */
+  padding-top: 2rem; /* Optional: Adds spacing inside the section after the border */
+}
 .subcategory-title {
   font-size: 1.4rem;
   margin-bottom: 1rem;

@@ -3,7 +3,7 @@ import "./Skills.css";
 
 const skillsData = [
   {
-    category: "PROGRAMMING LANGUAGES",
+    category: "PROGRAMMING SKILLS",
     subcategories: [
       {
         name: "Web Development",
@@ -113,7 +113,7 @@ const skillsData = [
     ],
   },
   {
-    category: "FOREIGN LANGUAGES",
+    category: "LANGUAGE SKILLS",
     items: [
       {
         name: "Armenian (Mother Tongue)",
@@ -198,12 +198,7 @@ export const chessAchievements = [
   {
     name: "Swiss Rapid Chess Champion (Boys U14)",
     year: "2017",
-    icon: "/assets/skills/chess/medal.svg",
-  },
-  {
-    name: "Aargau Rapid Chess Champion (Boys U16)",
-    year: "2017",
-    icon: "/assets/skills/chess/medal.svg",
+    icon: "/assets/skills/chess/trophy.svg",
   },
   {
     name: "Swiss Chess Champion (Girls U14)",
@@ -274,7 +269,7 @@ const Skills = () => {
               className="skills-category"
               key={index}
               id={
-                skillCategory.category === "FOREIGN LANGUAGES"
+                skillCategory.category === "LANGUAGE SKILLS"
                   ? "languages"
                   : undefined
               }

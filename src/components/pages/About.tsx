@@ -91,10 +91,12 @@ const About = () => {
           independently. For instance, with no prior experience, I taught myself
           React Native and developed a mobile app within just three weeks{" "}
           <a
-            href="direct link to my react native github"
+            href="https://github.com/gtamrazyan04/hci-react-native-task-app"
             className="inline-link"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            check it out
+            (check it out)
           </a>
           . To enhance my efficiency and learn by doing, I frequently
           collaborate with ChatGPT, elevating my skills in creating effective
