@@ -61,7 +61,7 @@ const projectGroups = [
         description:
           "Recorded and edited my own thesis video about Armenia as a Business Location.",
         mediaType: "video",
-        mediaSrc: "/assets/project1/video.mov",
+        mediaSrc: "/assets/project1/video.mp4",
         link: "https://www.youtube.com/watch?v=o2Brsn_TJzQ&feature=youtu.be",
       },
     ],

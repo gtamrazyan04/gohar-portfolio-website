@@ -69,3 +69,90 @@ const Skills = () => {
 };
 
 export default Skills;
+/* General section styling */
+.skills-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f3f4f6, #e3e4e9);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Skills container styling */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.skills-category {
+  margin: 0 auto;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* Skills grid layout */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Individual skill items */
+.skill-item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff, #eaeaea);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-item:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.skill-icon,
+.skill-flag {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/* Tooltip styling */
+.tooltip {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.skill-item:hover .tooltip {
+  opacity: 1;
+}
