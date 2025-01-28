@@ -16,6 +16,13 @@
 /* Logo Styling */
 .navigation_left {
   font-weight: bold;
+
+  & img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
 }
 
 .navigation_left-link {
@@ -29,6 +36,7 @@
   color: var(--white); /* Darker blue for contrast */
   font-weight: 700;
   letter-spacing: 0.5px;
+  vertical-align: middle;
 }
 
 /* Navigation Links */

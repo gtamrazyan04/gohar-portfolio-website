@@ -9,6 +9,7 @@ const Navigation = () => {
       {/* Logo */}
       <div className="navigation_left">
         <a href="#home" className="navigation_left-link">
+          <img src="/logo512.png" alt="logo" className="logo_image" />
           <span className="logo_name">Gohar Tamrazyan</span>
         </a>
       </div>
