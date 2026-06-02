@@ -20,8 +20,8 @@
 }
 
 .highlight-special {
-  font-family: "Fira Code", monospace;
-  letter-spacing: 0.03em;
+  font-weight: bold;
+  color: var(--primary-dark);
 }
 .inline-link {
   color: var(--primary-dark);

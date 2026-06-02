@@ -152,7 +152,7 @@ const Skills = () => {
     <>
       {/* Skills Section */}
       <section id="skills" className="skills-section">
-        <h2 className="section-title">Skills</h2>
+        <h2 className="section-title">Language Skills</h2>
         <div className="skills-container">
           {skillsData.map((skillCategory, index) => (
             <div
@@ -164,7 +164,9 @@ const Skills = () => {
                   : undefined
               }
             >
-              <h3 className="category-title">{skillCategory.category}</h3>
+              {skillCategory.category !== "LANGUAGE SKILLS" && (
+                <h3 className="category-title">{skillCategory.category}</h3>
+              )}
 
               {skillCategory.subcategories ? (
                 skillCategory.subcategories.map((subcategory, subIndex) => (
