@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e7ea870.css",
-    "main.js": "/static/js/main.c7811ba0.js",
+    "main.css": "/static/css/main.0a5ba959.css",
+    "main.js": "/static/js/main.36990d9d.js",
     "static/js/488.21a3b654.chunk.js": "/static/js/488.21a3b654.chunk.js",
     "static/media/profile.png": "/static/media/profile.a8dee979a26e08ca7a72.png",
     "static/media/aksa-logo.png": "/static/media/aksa-logo.31c363b0d1174d89c95e.png",
+    "static/media/egov-logo.png": "/static/media/egov-logo.4e44b3001a0cb1cd52cc.png",
     "static/media/diceres-logo.jpg": "/static/media/diceres-logo.0e25ef1ce8df76daa26a.jpg",
     "static/media/vochabular-logo.png": "/static/media/vochabular-logo.a93c174c6d8047aa208f.png",
+    "static/media/pavoot-logo.svg": "/static/media/pavoot-logo.7ee0ecb699c6b9a8af49da125d7454fa.svg",
     "index.html": "/index.html",
-    "main.4e7ea870.css.map": "/static/css/main.4e7ea870.css.map",
-    "main.c7811ba0.js.map": "/static/js/main.c7811ba0.js.map",
+    "main.0a5ba959.css.map": "/static/css/main.0a5ba959.css.map",
+    "main.36990d9d.js.map": "/static/js/main.36990d9d.js.map",
     "488.21a3b654.chunk.js.map": "/static/js/488.21a3b654.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e7ea870.css",
-    "static/js/main.c7811ba0.js"
+    "static/css/main.0a5ba959.css",
+    "static/js/main.36990d9d.js"
   ]
 }
