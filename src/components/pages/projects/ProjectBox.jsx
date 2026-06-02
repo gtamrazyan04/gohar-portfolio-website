@@ -27,7 +27,7 @@ const ProjectBox = ({ project }) => {
     >
       <div className="project-media">
         {project.mediaType === "video" && (
-          <video autoPlay loop muted>
+          <video autoPlay loop muted playsInline>
             <source src={project.mediaSrc} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

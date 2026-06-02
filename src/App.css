@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -34,5 +35,20 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    min-height: auto; /* Allow content to dictate height */
+    padding: 2rem 1rem;
+  }
+
+  .App-logo {
+    height: 30vmin; /* Reduce size for mobile */
+  }
+
+  .App-header {
+    font-size: calc(8px + 1.5vmin); /* Reduce font size slightly */
   }
 }

@@ -10,6 +10,7 @@ const Contact = () => {
     message: "",
   });
 
+  // todo: handle mail sending?
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -33,7 +34,7 @@ const Contact = () => {
           }
         });
       },
-      { threshold: 0.5 } // Trigger when 50% of the section is visible
+      { threshold: 0.5 }, // Trigger when 50% of the section is visible
     );
 
     if (contactRef.current) {
@@ -85,14 +86,14 @@ const Contact = () => {
         {/* Contact Info */}
         <div className="contact__info">
           <div className="contact__info-item">
-            <a href="mailto:gtamrazyan@ethz.ch">
+            <a href="mailto:gohar@pavoot.com">
               <FaEnvelope className="contact__icon" />
-              gtamrazyan@ethz.ch
+              gohar@pavoot.com
             </a>
           </div>
           <div className="contact__info-item">
             <a
-              href="https://www.linkedin.com/in/gohar-tamrazyan-401860293/"
+              href="https://www.linkedin.com/in/gohar-tamrazyan/"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -158,3 +158,77 @@
 .timeline__item:nth-child(even) .timeline__content {
   margin-right: 50px;
 }
+
+@media (max-width: 768px) {
+  .about__container {
+    padding-left: 40px;
+    padding-right: 0;
+  }
+  .about__intro {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .about__title {
+    font-size: 2rem; /* Reduce size */
+  }
+
+  .about__timeline {
+    padding: 2rem 1rem; /* Reduce padding */
+    max-width: 100%;
+  }
+
+  /* Stack timeline items vertically */
+  .timeline__item {
+    width: 90%;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .timeline__item.left,
+  .timeline__item.right {
+    align-self: center;
+    text-align: center;
+  }
+
+  /* Adjust content width */
+  .timeline__content {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 1rem;
+  }
+
+  /* Reduce circle size */
+  .timeline__circle {
+    width: 45px;
+    height: 45px;
+    top: -20px;
+  }
+
+  .timeline__circle img {
+    padding: 0.3rem; /* Reduce padding */
+  }
+
+  .timeline__content h3 {
+    font-size: 1.3rem;
+  }
+
+  .timeline__date {
+    font-size: 0.9rem;
+  }
+
+  .timeline__description,
+  .timeline__details {
+    font-size: 0.85rem;
+  }
+
+  /* Hide spiral line on small screens */
+  .timeline__spiral {
+    display: none;
+  }
+}

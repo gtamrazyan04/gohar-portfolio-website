@@ -5,6 +5,7 @@ const NavigationDots = () => {
   const sections = [
     { piece: "♔", title: "Home", href: "#home" },
     { piece: "♕", title: "About", href: "#about" },
+    { piece: "🦚", title: "Pavoot", href: "#pavoot" },
     { piece: "♖", title: "Projects", href: "#projects" },
     { piece: "♗", title: "Skills", href: "#skills" },
     { piece: "♘", title: "Chess", href: "#chess" },

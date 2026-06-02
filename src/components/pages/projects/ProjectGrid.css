@@ -2,7 +2,9 @@
   padding: 4rem 2rem;
   position: relative;
   z-index: 1;
+  margin-left: 40px;
 }
+
 .project__title {
   text-align: center;
   font-size: 2.5rem;
@@ -11,56 +13,105 @@
   z-index: 1;
 }
 
+/* 🔹 Make project grid responsive */
 .project-grid-container {
-  padding: 2rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem; /* Space between columns */
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start; /* Align columns at the top */
-  margin-left: 4%;
-  margin-right: 2%;
+  margin: 0 auto;
+  max-width: 100%; /* Ensures content does not stretch too wide */
 }
 
 .project-group {
-  flex: 1; /* Allow equal spacing for each column */
+  flex: 1;
+  min-width: 300px; /* Ensures responsiveness */
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--neutral-light);
   border-radius: 8px;
   padding: 2rem 1rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* 🔹 Responsive Columns */
+.project-column {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  align-items: center;
+}
+
+/* 🔹 Center titles and make them responsive */
 .group-title {
   font-size: 1.5rem;
   color: var(--primary-dark);
   margin-bottom: 1rem;
   text-align: center;
-  width: 100%; /* Ensure it aligns with the group */
-  border-bottom: 1px solid var(--primary-light); /* Optional: underline title */
-  padding-bottom: 0.5rem; /* Space between title and content */
+  width: 100%;
+  border-bottom: 1px solid var(--primary-light);
+  padding-bottom: 0.5rem;
 }
 
-/* Align projects vertically within columns */
-.project-column {
+/* 🔹 Project Box Enhancements */
+.project-box {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  width: 100%; /* Ensure alignment with title */
-  align-items: center; /* Center-align the project boxes */
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 95%;
+  max-width: 350px; /* Keeps a nice size on desktops */
 }
 
-/* Styling for the "Other Projects" list inside the last column */
-.other-projects-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 2rem; /* Add spacing between "Video Editing" and "Other Projects" */
-  text-align: center; /* Center-align the list */
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.other-project-item {
-  margin: 10px 0;
-  font-size: 1rem;
+/* 🔹 Keep media within a fixed aspect ratio */
+.project-media {
+  width: 100%;
+  height: 220px; /* Adjusted height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-light);
+}
+
+/* 🔹 Maintain image aspect ratio */
+.project-media img,
+.project-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 🔹 Project Info Styling */
+.project-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.project-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--primary-dark);
+}
+
+.project-info p {
+  font-size: 0.9rem;
   color: var(--neutral-dark);
+}
+
+@media (max-width: 768px) {
 }

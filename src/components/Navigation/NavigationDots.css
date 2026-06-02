@@ -65,3 +65,22 @@
   opacity: 1;
   visibility: visible;
 }
+
+@media (max-width: 768px) {
+  .navigation-dots {
+    left: 15px;
+    gap: 10px;
+  }
+
+  .navigation-dot {
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+  }
+
+  .navigation-dot::after {
+    left: 40px;
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+}

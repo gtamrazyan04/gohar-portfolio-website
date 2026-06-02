@@ -4,9 +4,8 @@
   background-color: var(--neutral-light);
   text-align: center;
 }
-
 .chess-section {
-  background-color: var(-white);
+  background-color: var(--white); /* Fixed variable syntax */
   padding: 4rem 0rem;
   text-align: center;
 }
@@ -23,6 +22,10 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  align-items: center; /* Ensures centering */
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .skills-category {
@@ -31,6 +34,7 @@
   scroll-margin-top: 50px;
 }
 
+/* Category Titles */
 .category-title {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
@@ -38,7 +42,6 @@
   color: #555;
 }
 
-/* Subcategory Title */
 .skills-subcategory {
   margin-bottom: 2rem;
 }
@@ -47,10 +50,13 @@
   margin-bottom: 0;
 }
 
+/* Border for Languages */
 #languages {
-  border-top: 1px dashed var(--neutral); /* Adds a solid black border at the top */
-  padding-top: 2rem; /* Optional: Adds spacing inside the section after the border */
+  border-top: 1px dashed var(--neutral);
+  padding-top: 2rem;
 }
+
+/* Subcategory Title */
 .subcategory-title {
   font-size: 1.4rem;
   margin-bottom: 1rem;
@@ -123,6 +129,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
+  white-space: nowrap;
 }
 
 .skill-item:hover .tooltip {
@@ -144,10 +151,12 @@
 
 /* Legend Section */
 .skills-legend {
-  margin-left: 10rem;
   text-align: left;
   font-size: 0.9rem;
   color: #555;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto; /* Centers the legend */
 }
 
 .skills-legend h4 {
@@ -175,8 +184,18 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .section-title {
+    margin-left: 40px;
+  }
+  /* Skills Container */
+  .skills-container {
+    margin-left: 40x;
+    width: 100%;
+  }
   .skills-grid {
-    gap: 1rem;
+    padding: 0 0;
+    margin-left: 40px;
+    gap: 2rem;
     z-index: 1;
     position: relative;
   }
@@ -194,5 +213,10 @@
 
   .year-display {
     font-size: 0.7rem;
+  }
+
+  .skills-legend {
+    text-align: center;
+    margin: 1rem auto;
   }
 }

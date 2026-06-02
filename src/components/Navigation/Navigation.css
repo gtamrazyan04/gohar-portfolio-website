@@ -4,45 +4,45 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: var(--primary-dark); /* Light blue background */
+  background-color: var(--primary-dark);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   height: 50px;
 }
 
 /* Logo Styling */
 .navigation_left {
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
 
-  & img {
-    width: 40px;
-    height: 40px;
-    vertical-align: middle;
-    margin-right: 0.5rem;
-  }
+.navigation_left img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
 }
 
 .navigation_left-link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  color: var(--primary); /* Main blue color */
+  color: var(--white);
 }
 
 .logo_name {
   font-family: "Arial", sans-serif;
   font-size: 20px;
-  color: var(--white); /* Darker blue for contrast */
   font-weight: 700;
   letter-spacing: 0.5px;
-  vertical-align: middle;
 }
 
 /* Navigation Links */
 .navigation_right {
   display: flex;
-  gap: 1.5rem; /* Spacing between links */
+  gap: 1.5rem;
   list-style: none;
 }
 
@@ -54,7 +54,7 @@
 
 .navigation_link {
   text-decoration: none;
-  color: var(--neutral-light); /* Dark gray for text */
+  color: var(--neutral-light);
   font-weight: 500;
   padding: 0.5rem;
   transition: color 0.3s ease, background-color 0.3s ease;
@@ -62,12 +62,66 @@
 }
 
 .navigation_link:hover {
-  color: var(--primary); /* Highlight link on hover */
+  color: var(--primary);
 }
 
-/* Responsive Design for Mobile */
+/* Hamburger Menu (Mobile) */
+.menu_icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
+  .navigation {
+    padding: 2rem;
+  }
+
+  .navigation_link {
+    font-size: 24px;
+  }
+  .navigation_left {
+    z-index: 100;
+  }
+
+  .navigation_left img {
+    width: 30px;
+    height: 30px;
+  }
+  .logo_name {
+    font-size: 20px;
+  }
+
+  /* Show Menu Icon */
+  .menu_icon {
+    display: block;
+    z-index: 100;
+  }
+  /* Hidden menu initially */
   .navigation_right {
-    display: none; /* Hide links on small screens */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Instead of a fixed pixel value */
+    right: 0;
+    background-color: var(--primary-dark);
+    width: 40%;
+    text-align: right;
+    padding: 1rem 0;
+    padding-right: 25px;
+    gap: 1rem;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateX(
+      100%
+    ); /* Slightly above instead of completely covering */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Show menu when "open" */
+  .navigation_right.open {
+    transform: translateX(0);
   }
 }
