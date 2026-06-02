@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0a5ba959.css",
-    "main.js": "/static/js/main.36990d9d.js",
+    "main.css": "/static/css/main.27720273.css",
+    "main.js": "/static/js/main.d7498cf8.js",
     "static/js/488.21a3b654.chunk.js": "/static/js/488.21a3b654.chunk.js",
     "static/media/profile.png": "/static/media/profile.a8dee979a26e08ca7a72.png",
     "static/media/aksa-logo.png": "/static/media/aksa-logo.31c363b0d1174d89c95e.png",
@@ -10,12 +10,12 @@
     "static/media/vochabular-logo.png": "/static/media/vochabular-logo.a93c174c6d8047aa208f.png",
     "static/media/pavoot-logo.svg": "/static/media/pavoot-logo.7ee0ecb699c6b9a8af49da125d7454fa.svg",
     "index.html": "/index.html",
-    "main.0a5ba959.css.map": "/static/css/main.0a5ba959.css.map",
-    "main.36990d9d.js.map": "/static/js/main.36990d9d.js.map",
+    "main.27720273.css.map": "/static/css/main.27720273.css.map",
+    "main.d7498cf8.js.map": "/static/js/main.d7498cf8.js.map",
     "488.21a3b654.chunk.js.map": "/static/js/488.21a3b654.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a5ba959.css",
-    "static/js/main.36990d9d.js"
+    "static/css/main.27720273.css",
+    "static/js/main.d7498cf8.js"
   ]
 }
